@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-2 "http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#feitoDe -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;feitoDe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#mediaPreco -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;mediaPreco">
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#numeroCordas -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;numeroCordas">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#temPes -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;temPes">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#tipoInstrumento -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;tipoInstrumento">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Instrumento -->
+
+    <Class rdf:about="&untitled-ontology-2;Instrumento"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Bateria -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Bateria">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">0</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">2500.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Metal</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Percussao</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">true</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#BateriaEletrica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;BateriaEletrica">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">0</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">8000.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Percussao</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Plastico</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">true</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Guitarra -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Guitarra">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">6</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">650.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Pandeiro -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Pandeiro">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">0</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">50.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Metal</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Percussao</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Piano -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Piano">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">12000.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">88</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">true</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#PianoDigital -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;PianoDigital">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">2000.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">88</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Digital</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">true</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Saxofone -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Saxofone">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">0</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">1500.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Metal</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Sopro</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Teclado -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Teclado">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">0</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">1000.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Digital</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Plastico</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Viola -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Viola">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">5</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">600.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Violao -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Violao">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">400.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">6</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Violao12Cordas -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Violao12Cordas">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">12</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">800.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Violao7Cordas -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Violao7Cordas">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">7</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">700.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Violino -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Violino">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">4</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">400.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">false</untitled-ontology-2:temPes>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/renan/ontologies/2015/7/untitled-ontology-2#Violoncelo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;Violoncelo">
+        <rdf:type rdf:resource="&untitled-ontology-2;Instrumento"/>
+        <untitled-ontology-2:mediaPreco rdf:datatype="&xsd;float">1200.0</untitled-ontology-2:mediaPreco>
+        <untitled-ontology-2:numeroCordas rdf:datatype="&xsd;integer">4</untitled-ontology-2:numeroCordas>
+        <untitled-ontology-2:tipoInstrumento rdf:datatype="&xsd;string">Corda</untitled-ontology-2:tipoInstrumento>
+        <untitled-ontology-2:feitoDe rdf:datatype="&xsd;string">Madeira</untitled-ontology-2:feitoDe>
+        <untitled-ontology-2:temPes rdf:datatype="&xsd;boolean">true</untitled-ontology-2:temPes>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
